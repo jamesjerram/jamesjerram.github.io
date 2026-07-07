@@ -4,223 +4,227 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Net Terminal</title>
+    <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/net-terminal/image/upload/v1783432938/favicon_zz1bso.ico">
     <style>
-        body{background-color:#000;font-size:20pt;color:#fff;font-family:sans-serif}main{height:auto;width:100%}a{color:#fff}a:hover{color:#999;text-decoration:underline}a:visited{color:#fff}a:visited:hover{color:#999}.logo{width:50%;height:auto}.album{width:100%;height:67vw;background-size:cover;background-image:url(https://res.cloudinary.com/net-terminal/image/upload/v1571928403/album_web_uhyoh2.jpg);background-repeat:no-repeat;background-position:left top}.bcembed{border:0;width:370px;height:42px}.bc-flex{display:flex;flex-direction:row;flex-flow:row wrap}@media only screen and (max-width:800px){.album{background-image:url(https://res.cloudinary.com/net-terminal/image/upload/v1571928408/album_mobile_jwuqkf.jpg);height:160vw}.logo{width:100%}.bcembed{width:100%}}.chrono>section{height:6em;width:100%;overflow:hidden;display:flex;margin-top:1em;}.chrono>section>a{display:block;height:100%;width:8em;}.chrono>section>a>img{height:100%;width:auto;}.chrono>section>div{display:flex;flex-direction:column;justify-content:space-around;}.release-date{font-size:.7em;color:#999;}.credit{font-size:.7em;color:#999;}.chrono>section>div>div:not(:first-of-type,.credit){font-size:.8em;}
+        body{background-color:#000;font-size:20pt;color:#fff;font-family:sans-serif}main{height:auto;width:100%}a{color:#fff}a:hover{color:#999;text-decoration:underline}a:visited{color:#fff}a:visited:hover{color:#999}.logo{width:50%;height:auto}.album{width:100%;height:67vw;background-size:cover;background-image:url(https://res.cloudinary.com/net-terminal/image/upload/v1571928403/album_web_uhyoh2.jpg);background-repeat:no-repeat;background-position:left top}.bcembed{border:0;width:370px;height:42px}.bc-flex{display:flex;flex-direction:row;flex-flow:row wrap}.chrono>section{height:6em;width:100%;overflow:hidden;display:flex;padding:.5em 0;}.chrono>section>.thumbnail{display:block;height:100%;width:8em;}.chrono>section>.thumbnail>img{height:100%;width:auto;}.chrono>section>div{display:flex;flex-direction:column;justify-content:space-around;}.release-date{font-size:.7em;color:#999;background-color:rgba(0, 0, 0, 0.5);}.credit{font-size:.7em;color:#999;}.credit>span{background-color:rgba(0, 0, 0, 0.5);}.chrono>section>div>div:not(:first-of-type,.credit){font-size:.8em;}.chrono{}
+        @media only screen and (max-width:800px){.album{background-image:url(https://res.cloudinary.com/net-terminal/image/upload/v1571928408/album_mobile_jwuqkf.jpg);height:160vw}.logo{width:100%}.bcembed{width:100%}.chrono>section>div{justify-content:flex-start;}.chrono>section>div{font-size:1em;}.chrono>section>.thumbnail{flex-shrink:0;width:4em;}.chrono>section>.thumbnail>img{height:auto;width:100%;}.top-info>a{display:block;}.top-info>a>.divider{display:none;}}
+        @media only screen and (max-width:600px){.chrono>section{display:block;height:auto;}.chrono>section>.thumbnail{display:block;width:200px;height:6em;}.chrono>section>.thumbnail>img{height:100%;width:auto;}.release-date{display: block;}}
     </style>
 </head>
 <body>
-    <image class="logo" src="https://res.cloudinary.com/net-terminal/image/upload/v1571928399/album_header_o7rwcy.webp" alt="net terminal" />
+    <img class="logo" src="https://res.cloudinary.com/net-terminal/image/upload/v1571928399/album_header_o7rwcy.webp" alt="net terminal" />
     <main>
-        <section class="top-info">Music&nbsp;by James&nbsp;Jerram.<br>
-            <a href="https://netterminal.bandcamp.com">Newer&nbsp;Music&nbsp|</a>
-            <a href="https://jamesjmusic.bandcamp.com">Soundtracks&nbsp|</a>
+        <section class="top-info">And other music&nbsp;by James&nbsp;Jerram.<br>
+            <a href="https://netterminal.bandcamp.com">Newer&nbsp;Music<span class="divider">&nbsp;</span></a>
+            <a href="https://jamesjmusic.bandcamp.com">Soundtracks<span class="divider">&nbsp;</span></a>
             <a href="https://jamesjerram.bandcamp.com">Older&nbsp;Music</a>
         </section><br>
         <section class="chrono">
-            <section class="unannounced">
-                <a href="#">
-                    <img src="" alt="" />
+            <section id="corrosiva">
+                <a class="thumbnail" href="https://corrosiva.cc/">
+                    <img src="https://res.cloudinary.com/net-terminal/image/upload/v1783371511/corrosiva_thumb_qk4ryu.png" alt="Corrosiva" />
                 </a>
                 <div>
-                <div><a href="#">Unannounced Project</a> <span class="release-date">??/??/????</span></div>
-
+                <div><a href="https://corrosiva.cc/">Corrosiva</a> <span class="release-date">??/??/????</span></div>
+                    <div>The soundtrack to the upcoming Corrosiva</div>
+                    <div>With <a href="https://bsky.app/profile/theo.twofold.page">theo</a></div>
                 </div>
             </section>
-            <section class="foundation">
-                <a href="https://netterminal.bandcamp.com/">
+            <section id="foundation">
+                <span class="thumbnail">
                     <img src="https://res.cloudinary.com/net-terminal/image/upload/c_thumb,w_160/v1783357002/foundation_d7gh1k.jpg" alt="Foundation" />
-                </a>
+                </span>
                 <div>
-                <div><a href="https://netterminal.bandcamp.com/">Net Terminal - Foundation</a> <span class="release-date">??/??/2026</span></div>
+                <div><span class="title">Net Terminal - Foundation</span> <span class="release-date">??/??/2026</span></div>
 
                 </div>
             </section>
-            <section class="twofold-parallel-ww">
-                <a href="https://endpaper.itch.io/twofold-parallel-ww">
-                    <img src="https://res.cloudinary.com/net-terminal/image/upload/c_thumb,w_200,g_face/v1783365570/western_winds_amhisg.png" alt="Twofold Parallel: Western Winds" />
+            <section id="twofold-parallel-ww">
+                <a class="thumbnail" href="https://endpaper.itch.io/twofold-parallel-ww">
+                    <img src="https://res.cloudinary.com/net-terminal/image/upload/c_thumb,w_200/v1783365570/western_winds_amhisg.png" alt="Twofold Parallel: Western Winds" />
                 </a>
                 <div>
-                    <div><a href="https://endpaper.itch.io/twofold-parallel-ww">Twofold Parallel: Western Winds</a> <span class="release-date">10/28/2025</span></div>
+                    <div><a class="title" href="https://endpaper.itch.io/twofold-parallel-ww">Twofold Parallel: Western Winds</a> <span class="release-date">10/28/2025</span></div>
                     <div>The soundtrack to Twofold Parallel: Western Winds, available at <a href="https://endpaper.itch.io/twofold-parallel-ww">itch.io</a></div>
                     <div>With <a href="https://endpaper.itch.io/">endpaper</a></div>
                 </div>
             </section>
-            <section class="brighter-days">
-                <a href="https://www.veryokvinyl.com/products/twofold-brighter-days">
+            <section id="brighter-days">
+                <a class="thumbnail" href="https://www.veryokvinyl.com/products/twofold-brighter-days">
                     <img src="https://res.cloudinary.com/net-terminal/image/upload/c_thumb,w_160/v1783366102/brighter-days_vq5ae3.webp" alt="Twofold: Brighter Days" />
                 </a>
                 <div>
-                    <div><a href="https://www.veryokvinyl.com/products/twofold-brighter-days">Twofold: Brighter Days</a> <span class="release-date">7/20/2025</span></div>
+                    <div><a class="title" href="https://www.veryokvinyl.com/products/twofold-brighter-days">Twofold: Brighter Days</a> <span class="release-date">7/20/2025</span></div>
                     <div>Selections from the Twofold soundtrack on Vinyl</div>
                     <div>With <a href="https://twofold.salty-salty-studios.com">Salty Salty Studios</a>  and <a href="https://vnstudioelan.com/">Studio Élan</a></div>
-                    <div class="credit">vocals on Tracing Footsteps by Lisa Reimold, lyrics by caps. Album art by theo minute. Mastered for Vinyl by Sarah Mancuso.</div>
+                    <div class="credit"><span>vocals on Tracing Footsteps by Lisa Reimold, lyrics by caps. Album art by theo minute. Mastered for Vinyl by Sarah Mancuso.</span></div>
                 </div>
             </section>
-            <section class="echoes-of-spring">
-                <a href="https://jamesjmusic.bandcamp.com/album/echoes-of-spring">
+            <section id="echoes-of-spring">
+                <a class="thumbnail" href="https://jamesjmusic.bandcamp.com/album/echoes-of-spring">
                     <img src="https://res.cloudinary.com/net-terminal/image/upload/c_thumb,w_160/v1783357002/echoes_of_spring_gqs2hu.jpg" alt="Echoes of Spring" />
                 </a>
                 <div>
-                    <div><a href="https://jamesjmusic.bandcamp.com/album/echoes-of-spring">Echoes of Spring</a> <span class="release-date">5/12/2024</span></div>
+                    <div><a class="title" href="https://jamesjmusic.bandcamp.com/album/echoes-of-spring">Echoes of Spring</a> <span class="release-date">5/12/2024</span></div>
                     <div>The soundtrack to Perfect Circle, available at <a href="https://endpaper.itch.io/perfect-circle">itch.io</a></div>
                     <div>With <a href="https://endpaper.itch.io/">endpaper</a></div>
-                    <div class="credit">Cover art by theo minute</div>
+                    <div class="credit"><span>Cover art by theo minute</span></div>
                 </div>
             </section>
-            <section class="twofold">
-                <a href="https://jamesjmusic.bandcamp.com/album/twofold-sounds-of-autumn">
+            <section id="twofold">
+                <a class="thumbnail" href="https://jamesjmusic.bandcamp.com/album/twofold-sounds-of-autumn">
                     <img src="https://res.cloudinary.com/net-terminal/image/upload/c_thumb,w_160/v1783357002/twofold_m2c9zz.jpg" alt="Twofold: Sounds of Autumn" />
                 </a>
                 <div>
-                    <div><a href="https://jamesjmusic.bandcamp.com/album/twofold-sounds-of-autumn">Twofold: Sounds of Autumn</a> <span class="release-date">10/27/2023</span></div>
+                    <div><a class="title" href="https://jamesjmusic.bandcamp.com/album/twofold-sounds-of-autumn">Twofold: Sounds of Autumn</a> <span class="release-date">10/27/2023</span></div>
                     <div>The soundtrack to Twofold, available on <a href="https://store.steampowered.com/app/1749770/Twofold/">Steam</a> and <a href="https://vnstudioelan.itch.io/twofold">itch.io</a></div>
                     <div>With <a href="https://twofold.salty-salty-studios.com">Salty Salty Studios</a> and <a href="https://vnstudioelan.com/">Studio Élan</a></div>
-                    <div class="credit">Vocals on Tracing Footsteps by Lisa Reimold,
-                    Lyrics on Tracing Footsteps by James Jerram, caps, theo minute </div>
+                    <div class="credit"><span>Vocals on Tracing Footsteps by Lisa Reimold,
+                    Lyrics on Tracing Footsteps by James Jerram, caps, theo minute</span></div>
                 </div>
             </section>
-            <section class="up-and-out">
-                <a href="https://idieyoudie.bandcamp.com/track/up-and-out">
+            <section id="up-and-out">
+                <a class="thumbnail" href="https://idieyoudie.bandcamp.com/track/up-and-out">
                     <img src="https://res.cloudinary.com/net-terminal/image/upload/c_thumb,w_160/v1783363843/telekompilation_4_oixhtx.jpg" alt="Telekompilation vol. 4" />
                 </a>
                 <div>
-                     <div><a href="https://idieyoudie.bandcamp.com/track/up-and-out">Net Terminal - Up and Out</a> <span class="release-date">6/30/2021</span></div>
+                     <div><a class="title" href="https://idieyoudie.bandcamp.com/track/up-and-out">Net Terminal - Up and Out</a> <span class="release-date">6/30/2021</span></div>
                      <div>Contributed to <a href="https://idieyoudie.bandcamp.com/album/telekompilation-vol-4">TELEKOMPILATION vol. 4</a></div>
-                     <div class="credit">Mastered by Eric Oehler and Submersible Studios </div>
+                     <div class="credit"><span>Mastered by Eric Oehler and Submersible Studios</span></div>
                 </div>
             </section>
-            <section class="canvas-colors">
-                <a href="https://unfinishedcircl.itch.io/canvas-colors-in-the-moving-city">
-                    <img src="https://res.cloudinary.com/net-terminal/image/upload/c_thumb,w_160/v1783364020/canvas_colors_ydt0ti.png" alt="Canvas Colors in the Moving City" />
+            <section id="canvas-colors">
+                <a class="thumbnail" href="https://unfinishedcircl.itch.io/canvas-colors-in-the-moving-city">
+                    <img src="https://res.cloudinary.com/net-terminal/image/upload/c_thumb,w_200/v1783364020/canvas_colors_ydt0ti.png" alt="Canvas Colors in the Moving City" />
                 </a>
                 <div>
-                    <div><a href="https://unfinishedcircl.itch.io/canvas-colors-in-the-moving-city">Canvas Colors in the Moving City</a> <span class="release-date">NaNoRenO 2021</span></div>
+                    <div><a class="title" href="https://unfinishedcircl.itch.io/canvas-colors-in-the-moving-city">Canvas Colors in the Moving City</a> <span class="release-date">NaNoRenO 2021</span></div>
                     <div>Soundtrack contributions</div>
                     <div>With <a href="https://unfinishedcircl.itch.io/">UnfinishedCircl</a></div>
                 </div>
             </section>
-            <section class="first-snow">
-                <a href="https://jamesjmusic.bandcamp.com/album/first-snow">
+            <section id="first-snow">
+                <a class="thumbnail" href="https://jamesjmusic.bandcamp.com/album/first-snow">
                     <img src="https://res.cloudinary.com/net-terminal/image/upload/c_thumb,w_160/v1783357002/first_snow_rt6a3u.jpg" alt="First Snow" />
                 </a>
                 <div>
-                    <div><a href="https://jamesjmusic.bandcamp.com/album/first-snow">First Snow</a> <span class="release-date">8/31/2020</span></div>
+                    <div><a class="title" href="https://jamesjmusic.bandcamp.com/album/first-snow">First Snow</a> <span class="release-date">8/31/2020</span></div>
                     <div>The soundtrack to First Snow, available on <a href="https://store.steampowered.com/app/1259430/First_Snow/">Steam</a> and <a href="https://salty-salty-studios.itch.io/first-snow">itch.io</a></div>
                     <div>With <a href="https://firstsnow.salty-salty-studios.com">Salty Salty Studios</a></div>
-                    <div class="credit">Album art created by All-Maker and TopHat </div>
+                    <div class="credit"><span>Album art created by All-Maker and TopHat</span></div>
                 </div>
             </section>
-            <section class="bitskip">
-                <a href="https://idieyoudie.bandcamp.com/track/bitskip">
+            <section id="bitskip">
+                <a class="thumbnail" href="https://idieyoudie.bandcamp.com/track/bitskip">
                     <img src="https://res.cloudinary.com/net-terminal/image/upload/c_thumb,w_160/v1783361059/telekompilation_3_hl7sdq.jpg" alt="Telekompilation vol. 3" />
                 </a>
                 <div>
-                     <div><a href="https://idieyoudie.bandcamp.com/track/bitskip">Net Terminal - bitskip</a> <span class="release-date">6/19/2020</span></div>
+                     <div><a class="title" href="https://idieyoudie.bandcamp.com/track/bitskip">Net Terminal - bitskip</a> <span class="release-date">6/19/2020</span></div>
                      <div>Contributed to <a href="https://idieyoudie.bandcamp.com/album/telekompilation-vol-3">Telekompilation vol. 3</a></div>
-                     <div class="credit">Cover artwork by Brandon Fox-Muir, Mastered by Scott Fox</div>
+                     <div class="credit"><span>Cover artwork by Brandon Fox-Muir, Mastered by Scott Fox</span></div>
                 </div>
             </section>
-            <section class="witchling-marjolane">
-                <a href="https://unfinishedcircl.itch.io/the-witchling-marjolaine">
-                    <img src="https://res.cloudinary.com/net-terminal/image/upload/c_thumb,w_160,g_face/v1783364019/witchling_marjolane_ubu3xw.png" alt="The Witchling Marjolaine" />
+            <section id="witchling-marjolaine">
+                <a class="thumbnail" href="https://unfinishedcircl.itch.io/the-witchling-marjolaine">
+                    <img src="https://res.cloudinary.com/net-terminal/image/upload/c_thumb,w_200/v1783364019/witchling_marjolane_ubu3xw.png" alt="The Witchling Marjolaine" />
                 </a>
                 <div>
-                    <div><a href="https://unfinishedcircl.itch.io/the-witchling-marjolaine">The Witchling Marjolaine</a> <span class="release-date">NaNoRenO 2020</span></div>
+                    <div><a class="title" href="https://unfinishedcircl.itch.io/the-witchling-marjolaine">The Witchling Marjolaine</a> <span class="release-date">NaNoRenO 2020</span></div>
                     <div>Soundtrack contributions</div>
                     <div>With <a href="https://unfinishedcircl.itch.io/">UnfinishedCircl</a></div>
                 </div>
             </section>
-            <section class="induction">
-                <a href="https://idieyoudie.bandcamp.com/track/induction">
+            <section id="induction">
+                <a class="thumbnail" href="https://idieyoudie.bandcamp.com/track/induction">
                     <img src="https://res.cloudinary.com/net-terminal/image/upload/c_thumb,w_160/v1783361059/telekompilation_2_pkw0im.jpg" alt="Telekompilation vol. 2" />
                 </a>
                 <div>
-                    <div><a href="https://idieyoudie.bandcamp.com/track/induction">Net Terminal - Induction</a> <span class="release-date">10/31/2019</span></div>
+                    <div><a class="title" href="https://idieyoudie.bandcamp.com/track/induction">Net Terminal - Induction</a> <span class="release-date">10/31/2019</span></div>
                     <div>Contributed to <a href="https://idieyoudie.bandcamp.com/album/telekompilation-vol-2">Telekompilation vol. 2</a></div>
-                    <div class="credit">Cover artwork by Brandon Fox-Muir, Mastered by Eric Oehler at Submersible Studios </div>
+                    <div class="credit"><span>Cover artwork by Brandon Fox-Muir, Mastered by Eric Oehler at Submersible Studios</span></div>
                 </div>
             </section>
-            <section class="ld-archive">
-                <a href="https://jamesjmusic.bandcamp.com/album/ld-archive">
+            <section id="ld-archive">
+                <a class="thumbnail" href="https://jamesjmusic.bandcamp.com/album/ld-archive">
                     <img src="https://res.cloudinary.com/net-terminal/image/upload/c_thumb,w_160/v1783357002/ld_archive_qdlnxb.jpg" alt="LD Archive" />
                 </a>
                 <div>
-                     <div><a href="https://jamesjmusic.bandcamp.com/album/ld-archive">LD Archive</a> <span class="release-date">5/9/2019</span></div>
-                     <div>The soundtrack to Love Despite (cancelled)</div>
+                     <div><a class="title" href="https://jamesjmusic.bandcamp.com/album/ld-archive">LD Archive</a> <span class="release-date">5/9/2019</span></div>
+                     <div>The soundtrack to Love Despite (canceled)</div>
                      <div>with <a href="https://unfinishedcircl.itch.io/">UnfinishedCircl</a></div>
                 </div>
             </section>
-            <section class="through-glass">
-                <a href="https://idieyoudie.bandcamp.com/track/through-glass">
+            <section id="through-glass">
+                <a class="thumbnail" href="https://idieyoudie.bandcamp.com/track/through-glass">
                     <img src="https://res.cloudinary.com/net-terminal/image/upload/c_thumb,w_160/v1783361059/telekompilation_1_xf5acu.jpg" alt="Telekompilation vol. 1" />
                 </a>
                 <div>
-                    <div><a href="https://idieyoudie.bandcamp.com/track/through-glass">Net Terminal - Through Glass</a> <span class="release-date">10/29/2018</span></div>
+                    <div><a class="title" href="https://idieyoudie.bandcamp.com/track/through-glass">Net Terminal - Through Glass</a> <span class="release-date">10/29/2018</span></div>
                     <div>Contributed to <a href="https://idieyoudie.bandcamp.com/album/telekompilation-vol-1">Telekompilation vol. 1</a></div>
-                    <div class="credit">Cover artwork by Brandon Fox-Muir, Mastered by Eric Oehler at Submersible Studios </div>
+                    <div class="credit"><span>Cover artwork by Brandon Fox-Muir, Mastered by Eric Oehler at Submersible Studios</span></div>
                 </div>
             </section>
-            <section class="hi">
-                <a href="https://netterminal.bandcamp.com/album/hi-single">
+            <section id="hi">
+                <a class="thumbnail" href="https://netterminal.bandcamp.com/album/hi-single">
                     <img src="https://res.cloudinary.com/net-terminal/image/upload/c_thumb,w_160/v1783357002/hi_arsydb.jpg" alt="Hi" />
                 </a>
                 <div>
-                     <div><a href="https://netterminal.bandcamp.com/album/hi-single">Net Terminal - Hi (single)</a> <span class="release-date">11/13/2017</span></div>
+                     <div><a class="title" href="https://netterminal.bandcamp.com/album/hi-single">Net Terminal - Hi (single)</a> <span class="release-date">11/13/2017</span></div>
 
                 </div>
             </section>
-            <section class="lights-out">
-                <a href="https://jamesjerram.bandcamp.com/album/lights-out">
+            <section id="lights-out">
+                <a class="thumbnail" href="https://jamesjerram.bandcamp.com/album/lights-out">
                     <img src="https://res.cloudinary.com/net-terminal/image/upload/c_thumb,w_160/v1783356843/lights_out_qdkfpx.jpg" alt="Lights Out" />
                 </a>
                 <div>
-                     <div><a href="https://jamesjerram.bandcamp.com/album/lights-out">Lights Out</a> <span class="release-date">11/12/2016</span></div>
+                     <div><a class="title" href="https://jamesjerram.bandcamp.com/album/lights-out">Lights Out</a> <span class="release-date">11/12/2016</span></div>
 
                 </div>
             </section>
-            <section class="here">
-                <a href="https://jamesjerram.bandcamp.com/album/here">
+            <section id="here">
+                <a class="thumbnail" href="https://jamesjerram.bandcamp.com/album/here">
                     <img src="https://res.cloudinary.com/net-terminal/image/upload/c_thumb,w_160/v1783356843/here_eemqwr.jpg" alt="Here" />
                 </a>
                 <div>
-                     <div><a href="https://jamesjerram.bandcamp.com/album/here">Here</a> <span class="release-date">2/11/2015</span></div>
+                     <div><a class="title" href="https://jamesjerram.bandcamp.com/album/here">Here</a> <span class="release-date">2/11/2015</span></div>
 
                 </div>
             </section>
-            <section class="derailed-dream">
-                <a href="https://jamesjerram.bandcamp.com/album/derailed-dream">
+            <section id="derailed-dream">
+                <a class="thumbnail" href="https://jamesjerram.bandcamp.com/album/derailed-dream">
                     <img src="https://res.cloudinary.com/net-terminal/image/upload/c_thumb,w_160/v1783356843/derailed_dream_s6l2ga.jpg" alt="Derailed Dream" />
                 </a>
                 <div>
-                     <div><a href="https://jamesjerram.bandcamp.com/album/derailed-dream">Derailed Dream</a> <span class="release-date">3/5/2013</span></div>
-                     <div>The soundtrack to Dream Train (cancelled)</div>
+                     <div><a class="title" href="https://jamesjerram.bandcamp.com/album/derailed-dream">Derailed Dream</a> <span class="release-date">3/5/2013</span></div>
+                     <div>The soundtrack to Dream Train (canceled)</div>
                      <div>With Nabi Visual</div>
                 </div>
             </section>
-            <section class="buried-in-sand">
-                <a href="https://jamesjerram.bandcamp.com/album/buried-in-sand">
+            <section id="buried-in-sand">
+                <a class="thumbnail" href="https://jamesjerram.bandcamp.com/album/buried-in-sand">
                     <img src="https://res.cloudinary.com/net-terminal/image/upload/c_thumb,w_160/v1783356843/buried_in_sand_uo3kyn.jpg" alt="Buried in Sand" />
                 </a>
                 <div>
-                    <div><a href="https://jamesjerram.bandcamp.com/album/buried-in-sand">Buried in Sand</a> <span class="release-date">8/5/2012</span></div>
+                    <div><a class="title" href="https://jamesjerram.bandcamp.com/album/buried-in-sand">Buried in Sand</a> <span class="release-date">8/5/2012</span></div>
                 </div>
             </section>
-            <section class="travel">
-                <a href="https://jamesjerram.bandcamp.com/album/travel">
+            <section id="travel">
+                <a class="thumbnail" href="https://jamesjerram.bandcamp.com/album/travel">
                     <img src="https://res.cloudinary.com/net-terminal/image/upload/c_thumb,w_160/v1783356843/travel_fvofxg.jpg" alt="Travel" />
                 </a>
                 <div>
-                    <div><a href="https://jamesjerram.bandcamp.com/album/travel">Travel</a> <span class="release-date">1/16/2011</span></div>
+                    <div><a class="title" href="https://jamesjerram.bandcamp.com/album/travel">Travel</a> <span class="release-date">1/16/2011</span></div>
 
                 </div>
             </section>
-            <section class="omnibus">
-                <a href="https://jamesjmusic.bandcamp.com/album/omnibus">
+            <section id="omnibus">
+                <a class="thumbnail" href="https://jamesjmusic.bandcamp.com/album/omnibus">
                     <img src="https://res.cloudinary.com/net-terminal/image/upload/c_thumb,w_160/v1783357002/omnibus_hxykvl.jpg" alt="Omnibus" />
                 </a>
                 <div>
-                    <div><a href="https://jamesjmusic.bandcamp.com/album/omnibus">Omnibus</a> <span class="release-date">7/20/2010</span></div>
-                    <div>The soundtrack to Omnibus (cancelled)</div>
+                    <div><a class="title" href="https://jamesjmusic.bandcamp.com/album/omnibus">Omnibus</a> <span class="release-date">7/20/2010</span></div>
+                    <div>The soundtrack to Omnibus (canceled)</div>
                     <div>With Point De Fusion</div>
                 </div>
             </section>
